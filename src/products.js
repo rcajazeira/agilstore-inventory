@@ -14,3 +14,18 @@ class Product {
         return `ID: ${this.id} | ${this.name} (${this.category}) | Estoque: ${this.quantity} | Preço: R$ ${this.price.toFixed(2)}`;
     }
 
+      // Método para exibir em formato de tabela
+    toTableRow() {
+        return {
+            id: this.id,
+            name: this.name,
+            category: this.category,
+            quantity: this.quantity,
+            price: `R$ ${this.price.toFixed(2)}`
+        };
+    }
+}
+
+// Exporta a classe
+module.exports = Product;
+
