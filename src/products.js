@@ -81,8 +81,48 @@ class ProductManager {
         return true;
     }
 
+       // 7. LISTAR POR CATEGORIA
+    getProductsByCategory(category) {
+        return this.products.filter(product => 
+            product.category.toLowerCase() === category.toLowerCase()
+        );
+    }
 
+     // 8. ORDENAR PRODUTOS
+    sortProducts(by = 'name', order = 'asc') {
+        const sorted = [...this.products];
+        
+        sorted.sort((a, b) => {
+            let aValue, bValue;
+            
+            switch(by) {
+                case 'name':
+                    aValue = a.name.toLowerCase();
+                    bValue = b.name.toLowerCase();
+                    break;
+                case 'quantity':
+                    aValue = a.quantity;
+                    bValue = b.quantity;
+                    break;
+                case 'price':
+                    aValue = a.price;
+                    bValue = b.price;
+                    break;
+                default:
+                    aValue = a.name.toLowerCase();
+                    bValue = b.name.toLowerCase();
+            }
+            
+            if (order === 'asc') {
+                return aValue > bValue ? 1 : -1;
+            } else {
+                return aValue < bValue ? 1 : -1;
+            }
+        });
+        
+        return sorted;
+    }
+}
 
-// Exporta a classe
-module.exports = Product;
-
+// Exporta ambas as classes
+module.exports = { Product, ProductManager };
