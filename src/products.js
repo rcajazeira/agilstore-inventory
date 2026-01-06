@@ -1,0 +1,3 @@
+// products.js
+class Product {
+}
