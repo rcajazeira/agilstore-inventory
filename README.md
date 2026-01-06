@@ -36,3 +36,18 @@ cd agilstore-inventory
 
 # Instale as dependências
 npm install
+
+Execução
+
+# Inicie o sistema
+npm start
+
+# Ou execute diretamente
+node src/app.js
+
+👨‍💻 Autor
+Rafael Cajazeira
+
+GitHub: @rcajazeira
+
+Projeto: AgilStore Inventory
