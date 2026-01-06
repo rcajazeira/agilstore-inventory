@@ -45,7 +45,7 @@ npm start
 # Ou execute diretamente
 node src/app.js
 
-👨‍💻 Autor
+# 👨‍💻 Autor
 Rafael Cajazeira
 
 GitHub: @rcajazeira
