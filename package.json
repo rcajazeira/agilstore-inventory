@@ -1,8 +1,10 @@
 {
   "name": "agilstore-inventory",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
+    "start": "node src/app.js",
+    "dev": "node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,7 +18,7 @@
     "url": "https://github.com/rcajazeira/agilstore-inventory/issues"
   },
   "homepage": "https://github.com/rcajazeira/agilstore-inventory#readme",
-  "description": "",
+  "description": "Sistema de gerenciamento de inventário para a loja AgilStore",
   "dependencies": {
     "chalk": "^5.6.2",
     "mysql2": "^3.16.0",
