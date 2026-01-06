@@ -72,7 +72,16 @@ class ProductManager {
         return product;
     }
 
-    
+     // 6. EXCLUIR PRODUTO
+    deleteProduct(id) {
+        const index = this.products.findIndex(product => product.id === id);
+        if (index === -1) return false;
+        
+        this.products.splice(index, 1);
+        return true;
+    }
+
+
 
 // Exporta a classe
 module.exports = Product;
