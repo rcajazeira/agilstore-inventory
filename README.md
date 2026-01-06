@@ -37,7 +37,7 @@ cd agilstore-inventory
 # Instale as dependências
 npm install
 
-# Execução
+Execução
 
 # Inicie o sistema
 npm start
