@@ -26,6 +26,13 @@ class Product {
     }
 }
 
+// Classe para gerenciar produtos
+class ProductManager {
+    constructor() {
+        this.products = [];
+        this.nextId = 1;
+    }
+
 // Exporta a classe
 module.exports = Product;
 
