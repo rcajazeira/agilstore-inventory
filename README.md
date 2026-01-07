@@ -38,12 +38,14 @@ cd agilstore-inventory
 npm install
 
 Execução
-
+  
 # Inicie o sistema
-npm start
+npm start  
 
 # Ou execute diretamente
 node src/app.js
+```
+
 
 # 👨‍💻 Autor
 Rafael Cajazeira
